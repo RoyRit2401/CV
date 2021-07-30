@@ -1,0 +1,709 @@
+////////////////////////////////////////////////////////
+// Horizontal Ruler
+///////////////////////////////////////////////////////
+
+.hr {
+  border: none;
+  border-bottom: 1rem dotted #5e8b7e;
+  width: 10%;
+  margin: 0 auto;
+}
+////////////////////////////////////////////////////////
+// Header Icon
+///////////////////////////////////////////////////////
+
+.header-icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 4rem;
+  margin-top: 5.5rem;
+  fill: #fff;
+}
+////////////////////////////////////////////////////////
+// Profile
+///////////////////////////////////////////////////////
+
+.profile {
+  position: relative;
+  overflow: hidden;
+  margin-right: 8rem !important;
+  width: 30rem;
+  height: 30rem;
+  border: 1rem solid #a7c4bc;
+  border-radius: 50%;
+  animation-name: rotating-image;
+  animation-duration: 1s;
+
+  &__pic {
+    height: 60rem;
+    transform: translateX(-14.5rem) translateY(-15rem) scale(0.52);
+    position: relative;
+    z-index: 100;
+
+    &--2 {
+      position: absolute;
+      left: -6.9rem;
+      top: -0.2rem;
+      height: 31rem;
+      opacity: 0;
+    }
+  }
+  &__caption {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%, 40%);
+    opacity: 0;
+
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+
+    transition: 0.4s;
+
+    z-index: 150;
+  }
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    z-index: 250;
+  }
+
+  &:hover &__pic--2 {
+    opacity: 1;
+    z-index: 200;
+    filter: brightness(50%);
+  }
+}
+.disclaimer {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+////////////////////////////////////////////////////////
+// Heading
+///////////////////////////////////////////////////////
+
+.heading-primary {
+  font-family: "Sacramento", cursive;
+  margin-right: 0 !important;
+
+  &--main,
+  &--sub {
+    display: block;
+    color: #fff;
+  }
+  &--main {
+    font-size: 10rem;
+    margin-bottom: 0;
+  }
+  &--sub {
+    font-size: 5rem;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+.typewrite {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 3rem;
+  display: inline-block;
+  color: #50cb93;
+}
+.heading-secondary {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+}
+.heading-cursive {
+  font-family: "Sacramento", cursive;
+  font-size: 12rem;
+  margin-bottom: 0 !important;
+  color: #fff;
+}
+.heading-cursive-black {
+  font-family: "Sacramento", cursive;
+  font-size: 14rem;
+  margin-bottom: 0 !important;
+  color: #333;
+}
+
+////////////////////////////////////////////////////////
+// Parangraph
+///////////////////////////////////////////////////////
+
+.paragraph {
+  text-align: justify;
+  font-size: 2rem;
+}
+.paragraph-small {
+  text-align: justify;
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+////////////////////////////////////////////////////////
+// Leaves GIF
+///////////////////////////////////////////////////////
+
+.leaves {
+  height: 20rem;
+}
+
+////////////////////////////////////////////////////////
+// Animated Arrow
+///////////////////////////////////////////////////////
+
+.down-arrow {
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 90%;
+
+    transition: all 0.2s;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+    }
+    &--2 {
+      opacity: 1;
+      transform: translate(-50%, -10%);
+      animation-name: downarrow;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+    }
+  }
+  &:hover &__icon--1,
+  &:active &__icon--1 {
+    transform: translate((-50%, -30%));
+  }
+  &:hover &__icon--2,
+  &:active &__icon--2 {
+    transform: translate((-50%, 0%));
+    animation: none;
+  }
+}
+@keyframes downarrow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -10%);
+  }
+}
+
+////////////////////////////////////////////////////////
+// NAvigation
+///////////////////////////////////////////////////////
+
+.navigation {
+  max-width: 144rem;
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4rem;
+    left: 4rem;
+    background-color: #2f5d62;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0.6, 0.1);
+    text-align: center;
+    cursor: pointer;
+    animation-name: fadeinright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  &__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5rem;
+    left: 5.5rem;
+    background-color: #5e8b7e;
+    z-index: 1000;
+    animation-name: fadeinright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    transition: transform 0.8s;
+  }
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1500;
+
+    display: none;
+
+    animation-name: fadeinmoreleft;
+    animation-duration: 0.5s;
+  }
+  &__list {
+    width: 100%;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__item {
+    list-style-type: none;
+    margin-bottom: 2rem;
+
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__link {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+
+    &:link,
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+      background-image: linear-gradient(
+        110deg,
+        transparent 0%,
+        transparent 50%,
+        #fff 50%
+      );
+      background-size: 220%;
+
+      transition: all 0.4s;
+    }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: #333;
+      transform: translateX(2rem);
+    }
+  }
+  span {
+    font-size: 3.5rem;
+    margin-right: 2rem;
+    font-family: "Sacramento", cursive;
+    font-weight: 700;
+  }
+  &__checkbox:checked ~ &__background {
+    transform: scale(85);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+    display: block;
+  }
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+    margin-right: 0 !important;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 0.15rem;
+      background-color: #fff;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.9rem;
+      transition: 0.2s;
+    }
+    &::after {
+      top: 0.9rem;
+    }
+  }
+  &__button:hover &__icon::before {
+    top: -1.1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1.1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+}
+@keyframes fadeinmoreleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40rem);
+  }
+  80% {
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transition: translate(0);
+  }
+}
+@keyframes fadeinright {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+////////////////////////////////////////////////////////
+// Section About
+///////////////////////////////////////////////////////
+
+.about-img {
+  height: 80rem;
+  width: 80rem;
+}
+
+////////////////////////////////////////////////////////
+// Section Skills
+///////////////////////////////////////////////////////
+
+.skills-img {
+  height: 80rem;
+  width: 80rem;
+}
+.list {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-left: 15rem;
+}
+.list-item {
+  flex: 0 0 50%;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.stars {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: #5e8b7e;
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.star-container {
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+span {
+  margin-bottom: 1rem;
+}
+.fa-star {
+  color: #558776;
+  &:not(:last-child) {
+    margin-right: 0.3rem;
+  }
+}
+
+////////////////////////////////////////////////////////
+// SLider Tweaks
+///////////////////////////////////////////////////////
+
+.slick-slide {
+  outline: none;
+}
+.fade,
+.fade-2 {
+  width: 70%;
+  margin: 0 auto;
+}
+.fade-3 {
+  width: 40%;
+  margin-left: 4rem;
+}
+.work-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  &:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+  }
+}
+
+.project-img:hover + .image-overlay-text {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 58%;
+  font-size: 10rem;
+  color: #5e8b7e;
+  cursor: pointer;
+}
+.prev,
+.prev-2 {
+  left: 10%;
+}
+.next,
+.next-2 {
+  right: 10%;
+}
+.prev-3,
+.next-3 {
+  top: 42%;
+  z-index: 100;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.next-3 {
+  right: 2rem;
+  color: #fff;
+}
+.prev-3 {
+  left: 2rem;
+  color: #fff;
+}
+.image-overlay-text {
+  font-family: "Sacramento", cursive;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 100%);
+  font-size: 10rem;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+////////////////////////////////////////////////////////
+// Section Contact
+///////////////////////////////////////////////////////
+
+.contact-img {
+  height: 50rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(#000, 0.6);
+  width: 40rem;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  margin-left: -20rem;
+  margin-top: 10rem;
+}
+
+.input-label {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.form-input {
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0.5rem;
+  border: 0.2rem solid transparent;
+  outline: none;
+  margin-bottom: 4rem;
+  background-color: rgba(#2f5d62, 0.6);
+  color: #fff;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+#message {
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  border-radius: 0.5rem;
+  border: 0.2rem solid transparent;
+  outline: none;
+  background-color: rgba(#2f5d62, 0.6);
+  color: #fff;
+  padding: 1rem;
+}
+::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: #fcfcfc;
+  opacity: 0.8;
+}
+.form-input:focus {
+  border: 0.2rem solid #5e8b7e;
+}
+#message:focus {
+  border: 0.2rem solid #5e8b7e;
+}
+
+////////////////////////////////////////////////////////
+// Button
+///////////////////////////////////////////////////////
+
+.btn {
+  align-self: center;
+  font-size: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 10rem;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: all 0.2s;
+
+  border: none;
+  outline: none;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0rem 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &--orange {
+    color: #fff;
+    background-color: #5e8b7e;
+    padding: 1.5rem 5rem;
+    &::after {
+      background-color: #5e8b7e;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////
+// Footer
+///////////////////////////////////////////////////////
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.8rem;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      color: #50cb93;
+      transform: rotate(8deg) scale(1.1);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+.footer-text {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+  opacity: 0;
+}
+.js--wp-skill-1,
+.js--wp-skill-2,
+.js--wp-skill-3,
+.js--wp-skill-4,
+.js--wp-skill-5,
+.js--wp-skill-6,
+.js--wp-skill-7,
+.js--wp-skill-8 {
+  opacity: 0;
+}
+.opacity {
+  opacity: 1;
+}
+
+@keyframes rotating-image {
+  0% {
+    transform: translateX(-40rem) rotate(360deg);
+  }
+
+  100% {
+    transform: translateX(0rem) rotate(0deg);
+  }
+}
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

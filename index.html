@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f38e6a1ad7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button"
+          ><span class="navigation__icon">&nbsp;</span></label
+        >
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#section-about" class="navigation__link"
+                ><span>01</span>About Me</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#section-features" class="navigation__link"
+                ><span>02</span>Skills</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#section-cards" class="navigation__link"
+                ><span>03</span>Designs</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#section-story" class="navigation__link"
+                ><span>04</span>Games</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#section-form" class="navigation__link"
+                ><span>05</span>Get in touch</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-icon-container">
+        <svg class="header-icon">
+          <use xlink:href="sprites.svg#icon-facebook"></use>
+        </svg>
+        <svg class="header-icon">
+          <use xlink:href="sprites.svg#icon-github"></use>
+        </svg>
+        <svg class="header-icon">
+          <use xlink:href="sprites.svg#icon-instagram"></use>
+        </svg>
+        <svg class="header-icon">
+          <use xlink:href="sprites.svg#icon-twitter"></use>
+        </svg>
+      </div>
+      <div class="intro">
+        <figure class="profile">
+          <img src="/profile-pic.jpg" alt="profile-pic" class="profile__pic" />
+          <img src="/tiger.gif" alt="tiger" class="profile__pic--2" />
+          <figcaption class="profile__caption">Rawrrrrrrr</figcaption>
+        </figure>
+
+        <h1 class="heading-primary">
+          <span
+            class="
+              heading-primary--main
+              animate__animated animate__fadeInRight animate__delay-1s
+            "
+            >I'm Roy
+          </span>
+          <span
+            class="
+              heading-primary--sub
+              animate__animated animate__fadeInRight animate__delay-1s
+            "
+            >I am
+          </span>
+          <span
+            class="
+              typewrite
+              animate__animated animate__fadeIn animate__delay-2s
+            "
+            data-period="2000"
+            data-type='[ "a Developer.", "a Designer.", "an Enthusiast." ]'
+          >
+            <span class="wrap"></span>
+          </span>
+        </h1>
+        <img src="/leaves.gif" alt="leaves" class="leaves" />
+      </div>
+      <p
+        class="disclaimer animate__animated animate__pulse animate__delay-1.5s"
+      >
+        Disclaimer : Dont Hover on the profile pic
+      </p>
+      <div class="down-arrow">
+        <a href="#" class="down-arrow__icon down-arrow__icon--1"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+        <a href="#" class="down-arrow__icon down-arrow__icon--2"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-about">
+        <img
+          src="/about.svg"
+          alt="about"
+          class="about-img js--wp-1 animate__animated"
+        />
+        <div class="description js--wp-1 animate__animated">
+          <h2 class="heading-secondary">Who am I ?</h2>
+          <p class="paragraph">
+            I am a Frontend Developer and UI/UX designer. I am a tech nerd.
+            Being programming since I remember and never hated a moment of it.
+            Love to solve problems. A programmer, gamer, enthusiast, and the CEO
+            of my company located in a utopia.
+          </p>
+        </div>
+      </div>
+      <hr class="hr hr-green" />
+      <div class="section-skills">
+        <div class="description js--wp-2 animate__animated">
+          <h2 class="heading-secondary">What can I do ?</h2>
+          <div class="skills">
+            <ul class="list">
+              <li class="list-item js--wp-skill-1 animate__animated">
+                <i class="fab fa-html5"></i>
+                html
+              </li>
+
+              <li class="list-item js--wp-skill-2 animate__animated">
+                <i class="fab fa-css3-alt"></i>
+                css
+              </li>
+
+              <li class="list-item js--wp-skill-3 animate__animated">
+                <i class="fab fa-js"></i>
+                javascript
+              </li>
+              <li class="list-item js--wp-skill-4 animate__animated">
+                <i class="fab fa-sass"></i>
+                sassy scripts
+              </li>
+              <li class="list-item js--wp-skill-5 animate__animated">
+                <i class="fab fa-figma"></i>
+                figma
+              </li>
+
+              <li class="list-item js--wp-skill-6 animate__animated">
+                <i class="fab fa-react"></i>
+                react.js
+              </li>
+
+              <li class="list-item js--wp-skill-7 animate__animated">
+                <i class="far fa-images"></i>
+                Photoshop
+              </li>
+              <li class="list-item js--wp-skill-8 animate__animated">
+                <i class="far fa-images"></i>
+                Illustrator
+              </li>
+            </ul>
+            <div class="star-container">
+              <span class="js--wp-skill-1 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i
+              ></span>
+              <span class="js--wp-skill-2 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-3 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-4 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-5 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-6 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-7 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span class="js--wp-skill-8 animate__animated">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="far fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/skill.svg"
+          alt="skills-illustratioon"
+          class="skills-img js--wp-2 animate__animated"
+        />
+      </div>
+
+      <div class="section-design">
+        <div class="description">
+          <h2
+            class="heading-secondary heading-cursive js--wp-3 animate__animated"
+          >
+            Designs
+          </h2>
+          <i class="fas fa-chevron-left prev arrow"></i>
+          <div class="fade">
+            <div>
+              <img src="inditours.png" alt="" class="project-img" />
+              <p class="image-overlay-text">View Project</p>
+            </div>
+            <div>
+              <img src="traveller.PNG" alt="" class="project-img" />
+              <p class="image-overlay-text">View Project</p>
+            </div>
+            <div>
+              <img src="healthian.PNG" alt="" class="project-img" />
+              <p class="image-overlay-text">View Project</p>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right next arrow"></i>
+        </div>
+      </div>
+      <hr class="hr" />
+      <div class="section-game">
+        <div class="description">
+          <h2
+            class="
+              heading-secondary heading-cursive-black
+              js--wp-4
+              animate__animated
+            "
+          >
+            Games
+          </h2>
+          <i class="fas fa-chevron-left prev-2 arrow"></i>
+          <div class="fade-2">
+            <div>
+              <img src="pig-game.PNG" alt="" class="project-img" />
+              <p class="image-overlay-text">Pig Game</p>
+            </div>
+            <div>
+              <img src="guess.PNG" alt="" class="project-img" />
+              <p class="image-overlay-text">Guess the number</p>
+            </div>
+            <div>
+              <img src="healthian.PNG" alt="" class="project-img" />
+              <p class="image-overlay-text">View Project</p>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right next-2 arrow"></i>
+        </div>
+      </div>
+      <div class="section-work">
+        <div class="description js--wp-5 animate__animated">
+          <h2 class="heading-secondary heading-cursive-black">Prior Work</h2>
+          <div class="paragraph-small">
+            Worked as a Frontend Developer at Nincompoop to create an e-learning
+            website called Skill Academia.The website is created using
+            React.js.Keeping in mind the reusability and expandability of the
+            code.
+          </div>
+        </div>
+
+        <div class="fade-3 js--wp-5 animate__animated">
+          <div>
+            <i class="fas fa-chevron-left prev-3 arrow"></i>
+            <img src="work1.png" alt="" class="work-img" />
+            <i class="fas fa-chevron-right next-3 arrow"></i>
+          </div>
+          <div>
+            <i class="fas fa-chevron-left prev-3 arrow"></i>
+            <img src="work2.png" alt="" class="work-img" />
+            <i class="fas fa-chevron-right next-3 arrow"></i>
+          </div>
+          <div>
+            <i class="fas fa-chevron-left prev-3 arrow"></i>
+            <img src="work3.png" alt="" class="work-img" />
+            <i class="fas fa-chevron-right next-3 arrow"></i>
+          </div>
+          <div>
+            <i class="fas fa-chevron-left prev-3 arrow"></i>
+            <img src="work4.png" alt="" class="work-img" />
+            <i class="fas fa-chevron-right next-3 arrow"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-contact">
+        <div class="description">
+          <h2
+            class="heading-secondary heading-cursive js--wp-6 animate__animated"
+          >
+            Get In Touch?
+          </h2>
+          <img src="/contact.svg" alt="contact-img" class="contact-img" />
+        </div>
+        <form action="#" class="contact-form js--wp-7 animate__animated">
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+          />
+          <input type="text" id="name" class="form-input" placeholder="Name" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+          <button class="btn btn--orange">
+            send <i class="far fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">about me</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">skills</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">designs</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">games</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">contact me</a>
+        </li>
+      </ul>
+      <p class="footer-text">
+        Designed and Developed by Roy. All rights reserved
+      </p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(".fade").slick({
+        infinite: true,
+        speed: 500,
+        fade: true,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next"),
+        cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+      $(".fade-2").slick({
+        infinite: true,
+        speed: 500,
+        fade: true,
+        prevArrow: $(".prev-2"),
+        nextArrow: $(".next-2"),
+        cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+      $(".fade-3").slick({
+        infinite: true,
+        speed: 500,
+        fade: true,
+        prevArrow: $(".prev-3"),
+        nextArrow: $(".next-3"),
+        cssEase: "linear",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

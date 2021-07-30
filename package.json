@@ -1,0 +1,19 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Roy",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "jquery": "^3.6.0",
+    "node": "^16.4.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1",
+    "waypoints": "^4.0.1"
+  }
+}
