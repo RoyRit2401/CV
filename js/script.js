@@ -123,67 +123,11 @@ $(".js--wp-7").waypoint(
   }
 );
 
-$(".js--wp-skill-1").waypoint(
+$(".js--wp-skills").waypoint(
   function (direction) {
-    $(".js--wp-skill-1").addClass("animate__bounceIn animate__delay-0.8s");
+    $(".js--wp-skills").addClass("animate__bounceInUp opacity ");
   },
   {
     offset: "50%",
-  }
-);
-$(".js--wp-skill-2").waypoint(
-  function (direction) {
-    $(".js--wp-skill-2").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "55%",
-  }
-);
-$(".js--wp-skill-3").waypoint(
-  function (direction) {
-    $(".js--wp-skill-3").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "60%",
-  }
-);
-$(".js--wp-skill-4").waypoint(
-  function (direction) {
-    $(".js--wp-skill-4").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "65%",
-  }
-);
-$(".js--wp-skill-5").waypoint(
-  function (direction) {
-    $(".js--wp-skill-5").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "70%",
-  }
-);
-$(".js--wp-skill-6").waypoint(
-  function (direction) {
-    $(".js--wp-skill-6").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "75%",
-  }
-);
-$(".js--wp-skill-7").waypoint(
-  function (direction) {
-    $(".js--wp-skill-7").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "80%",
-  }
-);
-$(".js--wp-skill-8").waypoint(
-  function (direction) {
-    $(".js--wp-skill-8").addClass("animate__bounceIn animate__delay-0.8s");
-  },
-  {
-    offset: "85%",
   }
 );
