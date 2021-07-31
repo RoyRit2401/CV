@@ -122,6 +122,9 @@ body {
   font-size: 14rem;
   margin-bottom: 0 !important;
   color: #333; }
+.heading-small{
+font-size:10rem;
+}
 
 .paragraph {
   text-align: justify;
